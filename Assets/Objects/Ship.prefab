@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 7604779031717527169}
   - component: {fileID: 7634325483675984427}
   - component: {fileID: 7626311206332142301}
+  - component: {fileID: 7604239743231640483}
   m_Layer: 0
-  m_Name: Example_2
+  m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7603239730801649575}
-  m_LocalRotation: {x: -0, y: -0.024317961, z: -0, w: 0.99970436}
+  m_LocalRotation: {x: 0, y: -0.024318838, z: 0, w: 0.9997043}
   m_LocalPosition: {x: 693.8, y: 85.7, z: 24.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -57,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b1dbe1232b9e65a42894a71e5a3bbe96, type: 2}
+  - {fileID: 2100000, guid: 96fc40aaa337f65488e24e396b30de8a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78,3 +79,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &7604239743231640483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7603239730801649575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 856e33a9421f35649a606b856a17f1aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSpeed: 25
