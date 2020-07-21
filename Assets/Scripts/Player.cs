@@ -61,4 +61,11 @@ public class Player : MonoBehaviour
         float Clampedpos = Mathf.Clamp(rawYPos, -yRange, yRange);
         transform.localPosition = new Vector3(transform.localPosition.x, Clampedpos, transform.localPosition.z);
     }
+
+    void OnTriggerEnter(Collider collision)
+    {
+        print("player hit something");
+    }
+
+    //End of Script
 }

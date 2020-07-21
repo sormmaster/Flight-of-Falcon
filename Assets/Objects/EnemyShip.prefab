@@ -5407,6 +5407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8269902515271770656}
+  - component: {fileID: 8262575835030308782}
   m_Layer: 0
   m_Name: EnemyShip
   m_TagString: Untagged
@@ -5442,6 +5443,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8262575835030308782
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4976939008876912576}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.627899, y: 3.718687, z: 10.738098}
+  m_Center: {x: -0.12545776, y: 6.336423, z: 0.7518616}
 --- !u!1 &5663100800253876121
 GameObject:
   m_ObjectHideFlags: 0
