@@ -3,28 +3,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
-public class Player : MonoBehaviour
+public class PlayerMovementController : MonoBehaviour
 {
-    [Tooltip("In m/s")][SerializeField] float xSpeed = 15f;
-    [Tooltip("In m")] [SerializeField] float xRange = 8f;
-    [Tooltip("In m/s")] [SerializeField] float ySpeed = 15f;
-    [Tooltip("In m")] [SerializeField] float yRange = 8f;
-    [SerializeField] float positionPitchFactor = -5f;
+    [Header("General")]
+    [Tooltip("In m/s")][SerializeField] float xSpeed = 25f;
+    [Tooltip("In m")] [SerializeField] float xRange = 15f;
+    [Tooltip("In m/s")] [SerializeField] float ySpeed = 25f;
+    [Tooltip("In m")] [SerializeField] float yRange = 10f;
+
+    [Header("Screen Position")]
+    [SerializeField] float positionPitchFactor = -2f;
     [SerializeField] float positionYawFactor = 2f;
+
+    [Header("Local Movement")]
     [SerializeField] float controlRollFactor = -10f;
-    [SerializeField] float controlPitchFactor = -10f;
+    [SerializeField] float controlPitchFactor = -5f;
     float xThrow;
     float ythrow;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    bool isDead = false;
 
     // Update is called once per frame
     void Update()
     {
+        if (isDead)
+        {
+            return;
+        }
         UpdateHorizontal();
         UpdateVertical();
         Rotation();
@@ -62,9 +66,9 @@ public class Player : MonoBehaviour
         transform.localPosition = new Vector3(transform.localPosition.x, Clampedpos, transform.localPosition.z);
     }
 
-    void OnTriggerEnter(Collider collision)
+    void OnPlayerDeath()
     {
-        print("player hit something");
+        isDead = true;
     }
 
     //End of Script
