@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
 
     [SerializeField] GameObject deathFx;
+    [SerializeField] Transform parent;
 
     void Start()
     {
@@ -14,7 +15,8 @@ public class Enemy : MonoBehaviour
     void OnParticleCollision(GameObject other)
     {
         print("got hit");
-        Instantiate(deathFx, transform.position, Quaternion.identity);
+        GameObject fx = Instantiate(deathFx, transform.position, Quaternion.identity);
+        fx.transform.parent = parent;
         Destroy(gameObject);
     }
 }
