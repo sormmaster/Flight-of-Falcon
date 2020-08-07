@@ -995,6 +995,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spear (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6858926693907221528, guid: e5dd4ebd076d2754ba36f75f2d87495c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5dd4ebd076d2754ba36f75f2d87495c, type: 3}
 --- !u!1001 &710497765
@@ -2039,6 +2044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50c415ca5a698574e8378ebe792eb981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseScorePerHit: 100
 --- !u!1001 &1510421563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2375,10 +2381,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2951,6 +2957,50 @@ Transform:
   m_Father: {fileID: 2136336618}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2079809557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4976939008876912576, guid: 06a5372db476b0b47929d3766f648a46,
+    type: 3}
+  m_PrefabInstance: {fileID: 1793503097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2079809558
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079809557}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!320 &2079809559
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079809557}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 0e52f36b599ff1e4f93abdab949ac229, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -446530093100802525, guid: 0e52f36b599ff1e4f93abdab949ac229, type: 2}
+    value: {fileID: 2079809558}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &2090530313
 GameObject:
   m_ObjectHideFlags: 0
@@ -3242,6 +3292,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target
       objectReference: {fileID: 0}
+    - target: {fileID: 3905066000079385269, guid: e5dd4ebd076d2754ba36f75f2d87495c,
+        type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 1844700369}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5dd4ebd076d2754ba36f75f2d87495c, type: 3}
 --- !u!1001 &7373995964823978849

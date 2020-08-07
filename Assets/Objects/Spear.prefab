@@ -196,6 +196,7 @@ GameObject:
   - component: {fileID: 6858926693907221530}
   - component: {fileID: 6858926693907221531}
   - component: {fileID: 6858926693907221528}
+  - component: {fileID: 3905066000079385269}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -272,8 +273,24 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6858926693907221534}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.6560187, y: 1.9269506, z: 1.9518152}
   m_Center: {x: 0.07942669, y: 0.14258878, z: 0.084618255}
+--- !u!114 &3905066000079385269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6858926693907221534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f49ecfd0b687fb47a5fedbf92ce1510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathFx: {fileID: 183727413325758495, guid: 9bb9ce6fcfc14164face6e12fa9cf171, type: 3}
+  parent: {fileID: 0}
+  value: 50
+  health: 10

@@ -37,4 +37,10 @@ public class ScoreBoard : MonoBehaviour
 
         scorePresented.text += score.ToString();
     }
+
+    public void ScoreHit(int points)
+    {
+        score += points;
+        UpdateScore();
+    }
 }

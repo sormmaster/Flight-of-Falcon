@@ -130,6 +130,9 @@ MonoBehaviour:
   xRange: 15
   ySpeed: 25
   yRange: 10
+  guns:
+  - {fileID: 7604239742380896672}
+  - {fileID: 5916465215422123144}
   positionPitchFactor: -2
   positionYawFactor: 2
   controlRollFactor: -10
@@ -232,6 +235,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30fb8f4ac172f4e46bf892644b354566, type: 3}
+--- !u!1 &7604239742380896672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4295358747286261510, guid: 30fb8f4ac172f4e46bf892644b354566,
+    type: 3}
+  m_PrefabInstance: {fileID: 5916465216129351334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7604239742380896675 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4295358747286261509, guid: 30fb8f4ac172f4e46bf892644b354566,
@@ -322,6 +331,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30fb8f4ac172f4e46bf892644b354566, type: 3}
+--- !u!1 &5916465215422123144 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4295358747286261510, guid: 30fb8f4ac172f4e46bf892644b354566,
+    type: 3}
+  m_PrefabInstance: {fileID: 7604239741884400526}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5916465215422123147 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4295358747286261509, guid: 30fb8f4ac172f4e46bf892644b354566,
